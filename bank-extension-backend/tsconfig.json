@@ -1,0 +1,33 @@
+{
+  // Visit https://aka.ms/tsconfig to read more about this file
+  "compilerOptions": {
+       /* Modules */
+    "module": "NodeNext",              /* Cible le système de modules Node.js le plus récent (ESM) */
+    "moduleResolution": "NodeNext",    /* Utilise la résolution de modules pour Node.js le plus récent */
+    "target": "ES2022",                /* Cible une version moderne de JavaScript */
+    "outDir": "./dist",
+    "rootDir": "./src",
+
+    // Environment Settings
+    // See also https://aka.ms/tsconfig/module
+    "types": [],
+
+    // Other Outputs
+    // "sourceMap": true,
+    // "declaration": true,
+    // "declarationMap": true,
+
+    // Stricter Typechecking Options
+    "noUncheckedIndexedAccess": true,
+    "exactOptionalPropertyTypes": true,
+
+
+    // Recommended Options
+    "strict": true,
+    "verbatimModuleSyntax": false,
+    "isolatedModules": true,
+    "noUncheckedSideEffectImports": true,
+    "moduleDetection": "force",
+    "skipLibCheck": true,
+  }
+}

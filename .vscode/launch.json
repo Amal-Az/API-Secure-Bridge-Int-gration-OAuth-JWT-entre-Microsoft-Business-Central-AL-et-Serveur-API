@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Microsoft cloud sandbox",
+            "request": "launch",
+            "type": "al",
+            "environmentType": "Sandbox",
+            // "environmentName": "f0c4b24d-851a-4404-9623-7e138b887664",
+            
+            // Lignes ajoutées pour cibler directement l'API:
+            "server": "https://api.businesscentral.dynamics.com", 
+            "serverInstance": "f0c4b24d-851a-4404-9623-7e138b887664/SANDBOX", // <--- Tenant ID / Nom Environnement
+            "authentication": "Windows", // Souvent requis pour le développement Cloud
+
+            "startupObjectId": 22,
+            "startupObjectType": "Page",
+            "breakOnError": "All",
+            "launchBrowser": true,
+            "enableLongRunningSqlStatements": true,
+            "enableSqlInformationDebugger": true
+        }
+    ]
+}
